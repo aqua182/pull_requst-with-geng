@@ -30,6 +30,9 @@ import java.util.Map;
  */
 class Solution1 {
     public String fractionToDecimal(int numerator, int denominator) {
+        if(denominator==0){
+            return "input error!";
+        }
         long numeratorLong = (long) numerator;
         long denominatorLong = (long) denominator;
         if (numeratorLong % denominatorLong == 0) {
